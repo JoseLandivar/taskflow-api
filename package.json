@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "REST API for task management with CI/CD pipeline on Azure",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "dev": "nodemon src/app.js",
+  "start": "node src/app.js",
+  "test": "jest --experimental-vm-modules"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joselandivar/taskflow-api.git"
@@ -13,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/joselandivar/taskflow-api/issues"
   },

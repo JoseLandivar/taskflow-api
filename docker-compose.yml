@@ -7,11 +7,12 @@ services:
     environment:
       POSTGRES_DB: taskflow_db
       POSTGRES_USER: taskflow_user
-      POSTGRES_PASSWORD: taskflow_pass
+      POSTGRES_PASSWORD: taskflow_pass_2026
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
 
 volumes:
   postgres_data:
